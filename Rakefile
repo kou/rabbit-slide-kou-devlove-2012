@@ -19,6 +19,13 @@ require "rabbit/task/slide"
 
 # Edit ./config.yaml to customize meta data
 
+spec = nil
 Rabbit::Task::Slide.new do |task|
-  task.spec.add_runtime_dependency("rabbit-theme-clear-code")
+  spec = task.spec
+  spec.add_runtime_dependency("rabbit-theme-clear-code")
+end
+
+desc "Tag #{spec.version}"
+task :tag do
+  sh("git", "-a", spec.version, "-m", "Publish #{spec.veresion}")
 end
