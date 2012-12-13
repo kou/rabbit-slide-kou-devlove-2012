@@ -254,8 +254,11 @@
 
 = 宣伝
 
-(('tag:center:コミットへのコメントサービス'))
+(('tag:center'))コミットへのコメントサービス\n
+(('note:https://www.clear-code.com/services/#commit-comment'))
 
-  「リーダブルコードの解説 - ククログ(2012-06-11)」
-  http://www.clear-code.com/blog/2012/6/11.html
-  ↑の一番最後のところ
+  # blockquote
+
+  お客様の開発プロジェクトのコミットを読んでコメントすることにより、お
+  客様の開発チームが「当たり前のようにクリアなコードを書く文化」を育む
+  ことを支援します。
